@@ -1,0 +1,61 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Courier, monospace;
+    transition: all;
+}
+body {
+    background-color: #f0f0f0;
+}
+/* Formatação do Layout Principal (main) */
+main {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    width: 100%;
+    min-height: 100vh;
+}
+/* Configurando a coluna esquerda com FlexBox */
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    background-color: #ffff;
+}
+/* Configurando a foto do perfil */
+.foto {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+/* Formatar Informações do perfil */
+figcaption {
+    margin-bottom: 12px;
+    text-align: left;
+    align-self: flex-start;
+}
+/* Configurar a seção do artigos */
+section {
+    padding: 32px;
+    background-color: #ffff;
+}
+
+article {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+article h1 {
+    margin-bottom: 12px;
+    line-height: 1.5;
+    font-size: 16px;
+}
+article p {
+    line-height: 1.5;
+}
